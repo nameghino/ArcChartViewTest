@@ -14,6 +14,7 @@
 		35A564901B1FF2B200656AD5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35A5648F1B1FF2B200656AD5 /* Images.xcassets */; };
 		35A564931B1FF2B200656AD5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35A564911B1FF2B200656AD5 /* LaunchScreen.xib */; };
 		35A5649F1B1FF2B200656AD5 /* CircularGraphViewTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A5649E1B1FF2B200656AD5 /* CircularGraphViewTestTests.m */; };
+		35A564AA1B1FF2CE00656AD5 /* CircularGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A564A91B1FF2CE00656AD5 /* CircularGraphView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		35A564981B1FF2B200656AD5 /* CircularGraphViewTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CircularGraphViewTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		35A5649D1B1FF2B200656AD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35A5649E1B1FF2B200656AD5 /* CircularGraphViewTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircularGraphViewTestTests.m; sourceTree = "<group>"; };
+		35A564A81B1FF2CE00656AD5 /* CircularGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircularGraphView.h; sourceTree = "<group>"; };
+		35A564A91B1FF2CE00656AD5 /* CircularGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircularGraphView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				35A5648F1B1FF2B200656AD5 /* Images.xcassets */,
 				35A564911B1FF2B200656AD5 /* LaunchScreen.xib */,
 				35A564821B1FF2B200656AD5 /* Supporting Files */,
+				35A564A81B1FF2CE00656AD5 /* CircularGraphView.h */,
+				35A564A91B1FF2CE00656AD5 /* CircularGraphView.m */,
 			);
 			path = CircularGraphViewTest;
 			sourceTree = "<group>";
@@ -219,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35A564AA1B1FF2CE00656AD5 /* CircularGraphView.m in Sources */,
 				35A5648B1B1FF2B200656AD5 /* ViewController.m in Sources */,
 				35A564881B1FF2B200656AD5 /* AppDelegate.m in Sources */,
 				35A564851B1FF2B200656AD5 /* main.m in Sources */,

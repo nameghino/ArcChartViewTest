@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E26a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,8 +16,32 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="h8L-UO-Yg7" customClass="CircularGraphView">
+                                <rect key="frame" x="150" y="20" width="300" height="300"/>
+                                <color key="backgroundColor" red="0.28588459599999999" green="0.83270016700000005" blue="0.9438729521" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="h8L-UO-Yg7" secondAttribute="height" multiplier="1:1" id="39R-SF-t4r"/>
+                                    <constraint firstAttribute="width" constant="300" id="vxY-hf-DAa"/>
+                                </constraints>
+                            </view>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="mma-rx-y41">
+                                <rect key="frame" x="148" y="377" width="304" height="31"/>
+                            </slider>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mma-rx-y41" firstAttribute="width" secondItem="h8L-UO-Yg7" secondAttribute="width" id="B1o-y9-1Hk"/>
+                            <constraint firstItem="mma-rx-y41" firstAttribute="centerX" secondItem="h8L-UO-Yg7" secondAttribute="centerX" id="Bo3-mK-T6H"/>
+                            <constraint firstItem="h8L-UO-Yg7" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="ENv-X4-3vm"/>
+                            <constraint firstItem="mma-rx-y41" firstAttribute="top" secondItem="h8L-UO-Yg7" secondAttribute="bottom" constant="57" id="TO2-Dq-biF"/>
+                            <constraint firstAttribute="centerX" secondItem="h8L-UO-Yg7" secondAttribute="centerX" id="Y7B-Iw-az1"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="graph" destination="h8L-UO-Yg7" id="myd-xb-0Jy"/>
+                        <outlet property="slider" destination="mma-rx-y41" id="D5D-Zz-WhE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
